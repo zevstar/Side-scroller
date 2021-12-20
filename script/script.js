@@ -1,5 +1,9 @@
 var character = document.getElementById("character");
 var block = document.getElementById("block");
+
+
+
+
 function jump(){
     if(character.classList != "animate"){
     character.classList.add("animate");
@@ -14,8 +18,10 @@ var checkDead = setInterval(function(){
 
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
-    if(blockLeft<20 && blockLeft>0 && characterTop>=130){
-            alert
+    if(blockLeft<20 && blockLeft>0 &&  characterTop>=130){
+            block.style.animation = "none";
+            block.style.display = "none";
+            alert("You lose!");
     }
 
 },10);
