@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Side Scrollers</title>
+    <title>Side Scroller</title>
 </head>
 <body>
+    <div id="score">0</div>
+    <div id="game-over"></div>
+
     <div id="game">
-        <div id="character"></div>
+        <div id="image">
+            <iframe src="https://giphy.com/embed/3N5r5Ks7vo3f2" width="48" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/transparent-pickle-3N5r5Ks7vo3f2"></a></p>
+        </div>
         <div id="block"></div>
 
     </div>
-     
+    
+      <button type="button" id="myBtn" onmousedown="jump()">Jump</button>
 
-</body>
-
-
-
-        <button type="button" id="myBtn" onclick="myFunction()">Jump</button>
-
-        <p id="jump"></p>
+        <!-- <p id="jump"></p> -->
         
-        <script>
+        <!-- <script>
         function myFunction() {
           var x = document.getElementById("myBtn");
           x.disabled = true;
-        }
+        } -->
 
-
-
-        
-   
-
-
-<script type = "/script/script.js" ></script> 
+<script src = "/script/script.js" ></script> 
+</body>
 </html>

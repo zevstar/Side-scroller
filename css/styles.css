@@ -10,13 +10,13 @@
     border: 1px solid red;
 }
 
-#character{
+#image{
     width: 20px;
-    height: 50px;
-    background-color: aquamarine;
+    height: 0px;
+    /* background-color: aquamarine; */
     position: relative;
-    top: 150px;
-    animation: jump 500ms;
+    top: 100px;
+    /* animation: jump 500ms; */
 }
 
 #block{
@@ -24,9 +24,9 @@
     height: 20px;
     background-color: blue;
     position: relative;
-    top: 130px;
+    top: 180px;
     left: 480px;
-    animation: block 1s linear infinite;
+    animation: block 2s linear infinite;
 }
 
 @keyframes block{
@@ -35,7 +35,7 @@
 }
 
 @keyframes jump{
-    0%{top: 150px;}
+    0%{top: 180px;}
     30%{top: 100px;}
     70%{top: 100px;}
     100%{top: 150px;}
