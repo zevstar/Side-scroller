@@ -22,11 +22,11 @@ const upDateScore = setInterval(function (){
 },2000);
 
 const checkDead = setInterval(function(){
-    const imageTop = parseInt(window.getComputedStyle(image).getPropertyValue("top"));
+    const imageBottom = parseInt(window.getComputedStyle(image).getPropertyValue("bottom"));
 
     const blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
-    if(blockLeft<20 && blockLeft>0 && imageTop>=130){
+    if(blockLeft<20 && blockLeft>0 && imageBottom>=0){
             block.style.animation = "none";
             block.style.display = "none";
             isDead = true;

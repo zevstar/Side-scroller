@@ -35,10 +35,10 @@
 }
 
 @keyframes jump{
-    0%{top: 180px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: 100px;}
+    30%{top: 70px;}
+    70%{top: 50px;}
+    100%{top: 100px;}
 }
 .animate{
     animation: jump 500ms;
